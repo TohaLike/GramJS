@@ -5,4 +5,5 @@
 3. Теперь надо авторизоваться, для этого активируем скрипт для аутентификации "node auth/telegram-auth.js", или через npm scripts в VScode.
 4. После этого мы можем отправлять сообщения по id пользователя 
 <img width="914" alt="image" src="https://github.com/user-attachments/assets/771833ce-324d-4ed2-ba9a-2c88443f4964" />
+
 В примере идёт отправка сообщения самому себе
