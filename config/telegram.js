@@ -8,7 +8,7 @@ dotenv.config()
 const apiId = Number(process.env.TELEGRAM_API_ID);
 const apiHash = process.env.TELEGRAM_API_HASH;
 const sessionFile = "session.json";
-const data = JSON.parse(fs.readFileSync(sessionFile, "utf-8"));
+const data = fs.existsSync(sessionFile) ? JSON.parse(fs.readFileSync(sessionFile, "utf-8")) : "";
 
 const stringSession = new StringSession(data.token)
 
